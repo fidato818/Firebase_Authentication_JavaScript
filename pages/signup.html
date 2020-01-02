@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="../css/mycss.css">
+    <title>Signup</title>
+</head>
+<div id="error">
+
+</div>
+
+<body style="background:url('../IMG/helvetica_1920x1200.jpg')">
+    <div class="container form-group col-xl-6 marg">
+        <h1 class="hea">
+            <b style="color:seagreen">AUTH</b>FireBase </h1>
+        <h3 class="hea" style="color:rgb(5, 110, 51)">Signup</h3>
+        <div class="form-group">
+            <Label class="lael">Full Name</Label>
+            <input type="text" class="form-control " name="" id="fullname" placeholder="Full Name" required>
+            <small id="name-err" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <Label class="lael">City Name</Label>
+            <input type="text" class="form-control" name="" id="cityname" placeholder="City Name" required>
+            <small id="city-err" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <Label class="lael">Education</Label>
+            <input type="text" class="form-control" name="" id="edu" placeholder="Education" required>
+            <small id="edu-err" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <Label class="lael">Email</Label>
+            <input type="email" class="form-control" name="" id="email" placeholder="Email" required>
+            <small id="email-err" class="form-text text-muted"></small>
+
+        </div>
+        <div class="form-group">
+            <Label class="lael">Password</Label>
+            <input type="password" class="form-control" name="" id="passwd" placeholder="Password" required>
+            <small id="passwd-err" class="form-text text-muted"></small>
+        </div>
+        <!-- <div class="form-group">
+            <Label class="lael">Type</Label>
+            <select class="form-control" required>
+                <option value="" id="select">Select One</option>
+                <option value="Matric" id="admin">Admin</option>
+                <option value="Matric" id="user">User</option>
+            </select>
+        </div> -->
+        <div class="text-right">
+            <input class="btn btn-secondary" type="submit" value="Signup" onClick="btnSignUp()">
+        </div>
+    </div>
+
+
+
+
+</body>
+<script>
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+</script>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="../js/firebase.js"></script> 
+</html>
+
+<!-- <label for=""> Education
+            <select class="dropdown" name="Education" id="edu" required>
+                <option value="">Select One</option>
+                <option value="Matric">Matric</option>
+                <option value="Inter">Inter</option>
+                <option value="Graduation">Graduation</option>
+                <option value="Masters">Masters</option>
+                <option value="P.H.D">P.H.D</option>
+            </select> -->

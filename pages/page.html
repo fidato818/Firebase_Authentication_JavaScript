@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./../css/mycss.css">
+    <title>FireBase Auth</title>
+</head>
+
+<body style="background: url(http://www.portoalegre.travel/upload/b/85/850631_4k-geometric-wallpaper.jpg)">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand" href="../index.html">Welcome to <b>Creative Design Studio</b></a>
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <!-- THIS ml-auto is that 'below li links are align-right' -->
+                <!-- <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li> -->
+                <li class="nav-item">
+                    <a class="nav-link " style="display:none" href="../pages/admin.html"><i class="fas fa-user-plus"></i>
+                        Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="display:none" href="../pages/user.html"><i class="fas fa-sign-in-alt"></i>
+                        Signin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link name" id="name"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " onclick="btnLogOut()" href="#"><i class="fas fa-sign-out-alt ">logout</i></a>
+                </li>
+            </ul>
+    </nav>
+    <div class="container">
+        <label for="" class="c col-xl-8 offset-xl-2">Your Good Name:</label>
+        <div class="form-group">
+            <input type="text" class="form-control col-xl-8 offset-xl-2" name="" id="name1">
+        </div>
+        <!-- <label for="" class="c col-xl-8 offset-xl-2">Email:</label>
+        <div class="form-group">
+            <input type="text" class="form-control col-xl-8 offset-xl-2" name="" id="em">
+        </div> -->
+        <label for="" class="c col-xl-8 offset-xl-2">Your Message:</label>
+        <textarea name="" class="form-control col-xl-8 offset-xl-2" id="msg" cols="0" rows="3"></textarea>
+        <div class="text-center">
+            <input type="button" class="btn btn-outline-success col-sm-4 col-xl-8 " value="Submit" onclick="createMsg()">
+        </div>
+    </div>
+    <div class="container" id="messages">
+
+    </div>
+
+        <!-- SCRIPTS -->
+    <script>
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="../js/firebase.js"></script>
+
+</body>
+
+</html>
