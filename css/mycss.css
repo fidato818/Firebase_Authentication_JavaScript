@@ -1,0 +1,144 @@
+.f{
+    margin-top: 100px;
+}
+.a{
+    font-size: 62px;
+    color: white;
+    float: right;
+    margin-right: 100px;
+    
+     
+}
+.body{
+    background-image: url('../IMG/wp2684265.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*__________________________________________________________*/
+.marg {
+    margin-top: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    background-image: url('../IMG/wp2684265.jpg');
+    background-position: center;
+    background-size: 1080px;
+    background-repeat: no-repeat;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+/*__________________________________________________________*/
+
+/*____________________________signin______________________________*/
+.maarg {
+    margin-top: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    /* background-image: url('../IMG/wp2684265.jpg'); */
+    background-color: rgb(69, 108, 146);
+    background-position: center;
+    background-size: 1080px;
+    background-repeat: no-repeat;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+/*__________________________________________________________*/
+.hea {
+    color: rgb(221, 6, 6);
+    text-align: center;
+}
+
+.form-text {
+    color: red !important;
+
+}
+
+.lael {
+    color: rgb(0, 0, 0);
+}
+
+.btn{
+    margin: 10px;
+}
+
+.nav-item{
+    margin-right: 10px;
+}
+.nav-link{
+    color: white !important;
+    font-size: 16px;
+}
+.name{
+    color: rgb(0, 0, 0) !important;
+}
+.c{
+    color: white !important;
+}
+
+@media (max-width:900px){
+    .body{
+        background-image: url('../IMG/wp2684265.jpg');
+        background-size: 1250px;
+        /* background-repeat: no-repeat; */
+        /* background-position: center; */
+    }
+}
